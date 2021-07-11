@@ -56,6 +56,17 @@
     <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
 
     <% } else { %>
+
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+          "@vorseek/root-config": "//root-config-spa.vercel.app/root-config-root-config.js",
+          "@navbar/shared-components": "//shared-components-spa.vercel.app/shared-components-shared-components.js",
+          "@vorseek/navbar": "//navbar-spa.vercel.app/navbar-navbar.js"
+        }
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.3.0/dist/import-map-overrides.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
