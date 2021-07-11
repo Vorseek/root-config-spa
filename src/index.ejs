@@ -45,9 +45,9 @@
       {
         "imports": {
           "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-          "@root-config/root-config": "//localhost:9000/root-config-root-config.js",
-          "@shared-components/shared-components": "//localhost:9001/shared-components-shared-components.js",
-          "@navbar/navbar": "//localhost:9002/navbar-navbar.js"
+          "@vorseek/root-config": "//localhost:9000/root-config-root-config.js",
+          "@navbar/shared-components": "//localhost:9001/shared-components-shared-components.js",
+          "@vorseek/navbar": "//localhost:9002/navbar-navbar.js"
         }
       }
     </script>
@@ -66,7 +66,7 @@
     <template id="single-spa-layout">
       <single-spa-router>
         <nav>
-          <application name="@navbar/navbar"></application>
+          <application name="@vorseek/navbar"></application>
         </nav>
         <main>
           <route default> </route>
@@ -78,7 +78,7 @@
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <script>
-      System.import("@root-config/root-config");
+      System.import("@vorseek/root-config");
     </script>
     <import-map-overrides-full
       show-when-local-storage="devtools"
